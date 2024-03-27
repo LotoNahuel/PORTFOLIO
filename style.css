@@ -97,6 +97,9 @@ h1, h2, h3, p, span {
     width: 325px;
     margin-top: 15px;
   }
+  #about-user a {
+    margin-top: 5px;
+  }
   .about-style {
     display: flex;
     flex-direction: column;
