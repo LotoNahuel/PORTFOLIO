@@ -168,13 +168,16 @@ h1, h2, h3, p, span {
 
 @media (max-width: 750px) {
   #selected-work {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
   }
   #selected-work img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
     width: 100%;
   }
 }
@@ -231,7 +234,7 @@ h1, h2, h3, p, span {
 }
 .txt-first-work p {
   font-size: 25px;
-  text-align: center;
+  text-align: justify;
   width: 700px;
 }
 
@@ -268,6 +271,14 @@ h1, h2, h3, p, span {
 }
 
 @media (max-width: 720px) {
+  #info_work {
+    height: 1000px;
+    top: -700px;
+  }
+  #info_work p {
+    width: 325px;
+    text-align: justify;
+  }
   #info_work img {
     width: 100%;
   }
