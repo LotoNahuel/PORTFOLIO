@@ -11,7 +11,7 @@ photo_1.addEventListener("click", (e)=>{
     photos.style.display = "flex";
     photos.innerHTML = `<div id="info_work">
     <img src="img/137.png" alt="">
-    <p>HX5 headphones (belong to a company).</p>
+    <p>HX5 headphones.</p>
     </div>`
     body_1.style.overflowY = "hidden";
 })
@@ -38,7 +38,7 @@ photo_4.addEventListener("click", (e)=>{
     photos.style.display = "flex";
     photos.innerHTML = `<div id="info_work">
     <img src="img/advanced_animation.138.png" alt="">
-    <p>TIGER sneakers (belong to a company).</p>
+    <p>TIGER sneakers.</p>
     </div>`
     body_1.style.overflowY = "hidden";
 })
