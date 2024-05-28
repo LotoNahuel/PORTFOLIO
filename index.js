@@ -5,6 +5,8 @@ const photo_4 = document.getElementById("photo_4");
 const header = document.getElementById("head_style");
 const photos = document.getElementById("photos_up");
 const body_1 = document.getElementById("body_1");
+const about = document.getElementById("right-h2");
+const work = document.getElementById("left-h2");
 
 photo_1.addEventListener("click", (e)=>{
     header.style.display = "none";
@@ -47,3 +49,14 @@ photos.addEventListener("click", (e)=>{
     photos.style.display = "none";
     body_1.style.overflowY = "scroll";
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    about.addEventListener("click", (e)=> {
+        document.getElementById("redirect_1").scrollIntoView({ behavior: 'smooth' });
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    work.addEventListener("click", (e)=> {
+        document.getElementById("redirect_2").scrollIntoView({ behavior: 'smooth' });
+    });
+});
