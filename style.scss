@@ -36,7 +36,20 @@ p {
 .head-right {
   display: flex;
 }
-
+@keyframes changeWidth {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.scale{
+  animation: changeWidth 0.5s;
+}
 .head-right #left-h2 {
   margin-right: 15px;
   cursor: pointer;

@@ -52,11 +52,19 @@ photos.addEventListener("click", (e)=>{
 
 document.addEventListener("DOMContentLoaded", function() {
     about.addEventListener("click", (e)=> {
+        about.classList.add("scale")
         document.getElementById("redirect_1").scrollIntoView({ behavior: 'smooth' });
+        setTimeout(function() {
+            about.classList.remove("scale");
+        }, 500);
     });
 });
 document.addEventListener("DOMContentLoaded", function() {
     work.addEventListener("click", (e)=> {
+        work.classList.add("scale")
         document.getElementById("redirect_2").scrollIntoView({ behavior: 'smooth' });
+        setTimeout(function() {
+            work.classList.remove("scale");
+        }, 500);
     });
 });

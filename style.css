@@ -36,10 +36,27 @@ p {
 .head-right {
   display: flex;
 }
+
+@keyframes changeWidth {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.scale {
+  animation: changeWidth 0.5s;
+}
+
 .head-right #left-h2 {
   margin-right: 15px;
   cursor: pointer;
 }
+
 .head-right #right-h2 {
   margin-left: 15px;
   cursor: pointer;
@@ -58,21 +75,26 @@ p {
   justify-content: center;
   margin-top: 100px;
 }
+
 #about-user img {
   width: 100%;
   border-radius: 100%;
   margin-right: 50px;
 }
+
 #about-user h2 {
   font-size: 50px;
 }
+
 #about-user h3 {
   font-size: 35px;
 }
+
 #about-user p {
   font-size: 25px;
   width: 700px;
 }
+
 #about-user .img-style {
   width: 20%;
 }
@@ -161,11 +183,13 @@ p {
   align-items: center;
   margin-top: 150px;
 }
+
 #info-user h3 {
   font-size: 20px;
   color: rgb(196, 52, 0);
   margin-right: 100px;
 }
+
 #info-user p {
   font-size: 25px;
   width: 700px;
@@ -209,9 +233,11 @@ p {
   align-items: center;
   margin-top: 100px;
 }
+
 #separation-line h2 {
   font-size: 30px;
 }
+
 #separation-line .style-line {
   border-top: 3px solid white;
   width: 150px;
@@ -225,6 +251,7 @@ p {
   margin-top: 200px;
   width: 100%;
 }
+
 #selected-work img {
   width: 100%;
   border-radius: 15px;
@@ -262,6 +289,7 @@ p {
   position: absolute;
   width: 100%;
 }
+
 #background-img img {
   width: 100%;
   opacity: 20%;
@@ -285,6 +313,7 @@ p {
   position: relative;
   height: 850px;
 }
+
 .info-first-work img {
   height: 100%;
 }
@@ -309,10 +338,12 @@ p {
   flex-direction: column;
   align-items: center;
 }
+
 .txt-first-work h2 {
   font-size: 50px;
   color: rgb(196, 52, 0);
 }
+
 .txt-first-work p {
   font-size: 25px;
   text-align: justify;
@@ -342,10 +373,12 @@ p {
   top: -890px;
   background: rgba(0, 0, 0, 0.7607843137);
 }
+
 #info_work p {
   margin-top: 15px;
   font-size: 20px;
 }
+
 #info_work img {
   cursor: pointer;
   width: 1500px;
@@ -366,7 +399,7 @@ p {
   #info_work {
     top: -600px;
   }
-  #photos_up p{
+  #photos_up p {
     margin-block-end: 300px;
   }
 }
@@ -407,5 +440,6 @@ p {
     text-align: center;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */
