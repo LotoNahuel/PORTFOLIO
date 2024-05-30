@@ -239,6 +239,11 @@ p {
     margin-top: 15px;
   }
 }
+@media (min-width: 1000px) {
+  #info-programs {
+    margin-left: 20px;
+  }
+}
 #separation-line {
   display: flex;
   flex-direction: column;
